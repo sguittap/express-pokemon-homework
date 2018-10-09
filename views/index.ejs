@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>this is pokemon</h1>
+    <style>
+        h1 {color:red;}
+        li {color:green;}
+    </style>
+    <ul><% for(let i = 0; i < pokemon.length; i++){ %> </ul>
+        <li><%= pokemon[i].name %></li>
+        <% } %>
 </body>
 </html>
