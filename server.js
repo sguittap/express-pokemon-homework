@@ -2,9 +2,15 @@ const express = require('express');
 const app = express();
 const pokemon = require('./modals/pokemon')
 
-app.get('/pokemon/:index', (req, res)=>{
+app.get('/pokemon', (req, res)=>{
     res.render('index.ejs',{
         pokemon: pokemon
+    })
+})
+
+app.get('/pokemon/:id',  (req, res)=>{
+    res.render('show.ejs',{
+        pokemon: pokemon[req.params.id]
     })
 })
 
