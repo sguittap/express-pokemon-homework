@@ -13,7 +13,7 @@
         li {color:green;}
     </style>
     <ul><% for(let i = 0; i < pokemon.length; i++){ %> </ul>
-        <li><%= pokemon[i].name %></li>
+        <li><a href="<%=[i]%>"><%= pokemon[i].name %></a></li>
         <% } %>
 </body>
 </html>

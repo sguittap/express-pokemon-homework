@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const pokemon = require('./modals/pokemon')
 
-app.get('/pokemon', (req, res)=>{
+app.get('/pokemon/index', (req, res)=>{
     res.render('index.ejs',{
         pokemon: pokemon
     })
