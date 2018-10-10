@@ -11,11 +11,16 @@
 </head>
 <body>
     <h1>this is one pokemon</h1>
-    
-    <% for(let key in pokemon){ %>
-    <%= pokemon[key] %>
-    <% } %>
-
-
+    <ul>
+        <% for(let key in pokemon){ %>
+            <li><%=key%>: <%=pokemon[key] %></li> 
+        <% } %>
+    </ul>
+    <form action="/pokemon">
+        <input type="submit" value="Reutrn">
+    </form>
+    <form action="/pokemon/<%=[i]%>/edit">
+        <input type="submit" value="Edit">
+    </form>
 </body>
 </html>
