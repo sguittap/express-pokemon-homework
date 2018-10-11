@@ -28,4 +28,14 @@ router.get('/:index/show', (req, res)=>{
         i: req.params.index
     })
 })
+
+router.get('/new', (req, res)=>{
+    res.render('new.ejs',{pokemon: Pokemon})
+})
+
+router.put('/new/create', (req, res)=>{
+    Pokemon.push(req.body);
+    res.redirect('/pokemon')
+})
+
 module.exports = router;

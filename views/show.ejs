@@ -16,11 +16,8 @@
             <li><%=key%>: <%=pokemon[key] %></li> 
         <% } %>
     </ul>
-    <form action="/pokemon">
-        <input type="submit" value="Reutrn">
-    </form>
-    <form action="/pokemon/<%=[i]%>/edit">
-        <input type="submit" value="Edit">
-    </form>
+    <a href="/pokemon"><button>Return</button></a>
+    <a href="/pokemon/<%=[i]%>/edit"><button>Edit</button></a>
+    
 </body>
 </html>
